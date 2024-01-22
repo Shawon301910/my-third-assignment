@@ -55,7 +55,7 @@
 
         <!-- start nav section -->
 
-        <nav class="w-full lg:w-4/5 mx-auto">
+        <nav class="w-full lg:w-4/5 mx-auto mt-2 lg:mt-6">
             <div class="navbar justify-between">
                 <div class="flex justify-start">
                     <div class="dropdown">
@@ -75,7 +75,7 @@
                             <li><a href="#"></a>Contact</li>
                         </ul>
                     </div>
-                    <h4 class="text-xl lg:text-3xl font-extrabold">Hockey<span class="text-primary-color">'</span>s</h4>
+                    <h2 class="text-xl lg:text-4xl font-extrabold">Hockey<span class="text-primary-color">'</span>s</h2>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu-horizontal">
@@ -96,6 +96,40 @@
         </nav>
 
         <!-- end nav section -->
+
+        <!-- start banner section -->
+
+        <div class="w-full lg:w-4/5 mx-auto static lg:relative mt-6 lg:mt-12">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full rounded-2xl" />
+                    <div class="absolute flex gap-5 justify-center lg:justify-start left-1/2 transform -translate-x-1/2 bottom-10 lg:left-10">
+                        <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full rounded-2xl" />
+                    <div class="absolute flex gap-5 justify-center lg:justify-start left-1/2 transform -translate-x-1/2 bottom-10 lg:left-10">
+                        <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle border-none bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full rounded-2xl" />
+                    <div class="absolute flex gap-5 justify-center lg:justify-start left-1/2 transform -translate-x-1/2 bottom-10 lg:left-10">
+                        <a href="#slide2" class="btn btn-circle border-none bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle border-none bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-2/5 bg-black text-white static lg:absolute bottom-10 right-10 p-8 space-y-4 rounded-xl mt-2 lg:mt-0">
+                <h4>Meet all the heroes from the field</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+        </div>
+
+        <!-- end banner section -->
 
     </header>
 
