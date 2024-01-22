@@ -26,16 +26,16 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-color': '#FF4240',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#FF4240',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- my custom style -->
 
@@ -47,19 +47,63 @@
 
 </head>
 
-<body class="font-manrope">
+<body>
 
     <!-- start header section -->
 
-    <header>
-        
+    <header class="font-manrope container mx-auto">
+
+        <!-- start nav section -->
+
+        <nav class="w-full lg:w-4/5 mx-auto">
+            <div class="navbar justify-between">
+                <div class="flex justify-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn-ghost px-1 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="#"></a>Home</li>
+                            <li><a href="#"></a>About</li>
+                            <li><a href="#"></a>Pages</li>
+                            <li><a href="#"></a>Blog</li>
+                            <li><a href="#"></a>Contact</li>
+                        </ul>
+                    </div>
+                    <h4 class="text-xl lg:text-3xl font-extrabold">Hockey<span class="text-primary-color">'</span>s</h4>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu-horizontal">
+                        <li class="font-medium text-primary-color"><a class="cursor-pointer" href="#"></a>Home</li>
+                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>About</li>
+                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>Pages</li>
+                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>Blog</li>
+                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>Contact</li>
+                    </ul>
+                </div>
+                <div class="flex justify-end">
+                    <div class="flex gap-4 items-center">
+                        <i class="fa-solid fa-magnifying-glass text-base lg:text-xl"></i>
+                        <a class="btn bg-primary-color text-white text-xs lg:text-xl">Get Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- end nav section -->
+
     </header>
 
     <!-- end header section -->
 
     <!-- start main section -->
 
-    <main>
+    <main class="w-4/5 mx-auto">
 
     </main>
 
@@ -68,7 +112,9 @@
     <!-- start footer section -->
 
     <footer>
+        <div class="w-4/5 mx-auto">
 
+        </div>
     </footer>
 
     <!-- end footer section -->
