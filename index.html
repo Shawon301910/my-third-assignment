@@ -31,6 +31,8 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-color': '#FF4240',
+                        'heading-color': '#131318',
+                        'description-color': '#13131899',
                     }
                 }
             }
@@ -55,7 +57,7 @@
 
         <!-- start nav section -->
 
-        <nav class="w-full lg:w-4/5 mx-auto mt-2 lg:mt-6">
+        <nav class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-2 lg:mt-6">
             <div class="navbar justify-between">
                 <div class="flex justify-start">
                     <div class="dropdown">
@@ -68,27 +70,27 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="#"></a>Home</li>
-                            <li><a href="#"></a>About</li>
-                            <li><a href="#"></a>Pages</li>
-                            <li><a href="#"></a>Blog</li>
-                            <li><a href="#"></a>Contact</li>
+                            <li class="text-[#424247]"><a href="#"></a>Home</li>
+                            <li class="text-[#424247]"><a href="#"></a>About</li>
+                            <li class="text-[#424247]"><a href="#"></a>Pages</li>
+                            <li class="text-[#424247]"><a href="#"></a>Blog</li>
+                            <li class="text-[#424247]"><a href="#"></a>Contact</li>
                         </ul>
                     </div>
                     <h2 class="text-xl lg:text-4xl font-extrabold">Hockey<span class="text-primary-color">'</span>s</h2>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu-horizontal">
+                    <ul class="menu-horizontal gap-10">
                         <li class="font-medium text-primary-color"><a class="cursor-pointer" href="#"></a>Home</li>
-                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>About</li>
-                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>Pages</li>
-                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>Blog</li>
-                        <li class="ml-10"><a class="cursor-pointer" href="#"></a>Contact</li>
+                        <li class="ml-10text-[#424247]"><a href="#"></a>About</li>
+                        <li class="ml-10text-[#424247]"><a href="#"></a>Pages</li>
+                        <li class="ml-10text-[#424247]"><a href="#"></a>Blog</li>
+                        <li class="ml-10text-[#424247]"><a href="#"></a>Contact</li>
                     </ul>
                 </div>
                 <div class="flex justify-end">
                     <div class="flex gap-4 items-center">
-                        <i class="fa-solid fa-magnifying-glass text-base lg:text-xl"></i>
+                        <i class="fa-solid fa-magnifying-glass text-base lg:text-xl text-[#424247]"></i>
                         <a class="btn bg-primary-color text-white text-xs lg:text-xl">Get Ticket</a>
                     </div>
                 </div>
@@ -99,7 +101,7 @@
 
         <!-- start banner section -->
 
-        <div class="w-full px-2 lg:px-0 lg:w-4/5 mx-auto static lg:relative mt-6 lg:mt-12">
+        <div class="w-full px-4 lg:px-0 lg:w-4/5 mx-auto static lg:relative mt-6 lg:mt-12">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full rounded-2xl" />
@@ -127,9 +129,10 @@
                 </div>
             </div>
             <div
-                class="w-full lg:w-2/5 bg-black text-white static lg:absolute bottom-10 right-10 p-8 space-y-4 rounded-xl mt-2 lg:mt-0">
-                <h4>Meet all the heroes from the field</h4>
-                <p>Buy a ticket to meet your hero in the field. If you buy now, you will get a free ticket.</p>
+                class="w-full lg:w-2/5 bg-black text-white static lg:absolute bottom-10 right-10 p-4 lg:p-6 space-y-4 rounded-xl mt-2 lg:mt-0">
+                <h4 class="text-xl lg:text-2xl font-extrabold">Meet all the heroes from the field</h4>
+                <p class="text-sm lg:text-base">Buy a ticket to meet your hero in the field. If you buy now, you will
+                    get a free ticket.</p>
             </div>
         </div>
 
@@ -145,38 +148,47 @@
 
         <!-- start progress section -->
 
-        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:50">
+        <section class="w-full lg:w-4/5 mx-auto px-4 lg:px-0 mt-20 lg:mt-28">
             <div class="text-center">
-                <div class="w-full px-0 lg:px-28 space-y-4 mb-12 border-y-2 border-dotted py-16">
-                    <h2 class="text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
-                    <p class="font-medium">Hockey is an outdoor game played between two teams of 11 players who use long
+                <div class="w-full space-y-4 mb-12 border-y-2 border-dotted px-0 lg:px-28 py-10 lg:py-14">
+                    <h2 class="text-2xl lg:text-4xl text-heading-color font-extrabold">Professional Hockeys Club</h2>
+                    <p class="text-sm lg:text-base text-description-color font-medium">Hockey is an outdoor game played
+                        between two teams of 11 players who use long
                         curved sticks to hit a small ball and try to score goals. There are many types of hockey. Some
                         games make the use of skates and others do not.
                     </p>
                 </div>
                 <div class="grid gap-5 grid-cols-1 lg:grid-cols-4">
                     <div class="w-full space-y-4">
-                        <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                        <div class="radial-progress text-red-500 transform rotate-[150deg]" style="--value:87;"
+                            role="progressbar"><span class="transform rotate-[-150deg]">87%</span></div>
                         <h3 class="text-xl font-semibold">Prayer Facility</h3>
-                        <p>Our state of the art equipment helps athletes improve their skills to achieve optimum
+                        <p class="text-description-color w-full">Our state of the art equipment helps athletes improve
+                            their skills to achieve optimum
                             success.</p>
                     </div>
                     <div class="w-full space-y-4">
-                        <div class="radial-progress text-green-500" style="--value:90;" role="progressbar">90%</div>
+                        <div class="radial-progress text-green-500 transform rotate-[150deg]" style="--value:90;"
+                            role="progressbar"><span class="transform rotate-[-150deg]">90%</span></div>
                         <h3 class="text-xl font-semibold">Experienced Coach</h3>
-                        <p>A literacy coach who possesses coach training and is actively engaged in coaching colleagues.
+                        <p class="text-description-color">A literacy coach who possesses coach training and is actively
+                            engaged in coaching colleagues.
                         </p>
                     </div>
                     <div class="w-full space-y-4">
-                        <div class="radial-progress text-yellow-500" style="--value:95;" role="progressbar">95%</div>
+                        <div class="radial-progress text-yellow-500 transform rotate-[150deg]" style="--value:95;"
+                            role="progressbar"><span class="transform rotate-[-150deg]">95%</span></div>
                         <h3 class="text-xl font-semibold">Senior Player</h3>
-                        <p>Senior Player means a player who has played International jurisdiction in the current or last
+                        <p class="text-description-color">Senior Player means a player who has played International
+                            jurisdiction in the current or last
                             3 preceding seasons.</p>
                     </div>
                     <div class="w-full space-y-4">
-                        <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                        <div class="radial-progress text-blue-500 transform rotate-[150deg]" style="--value:80;"
+                            role="progressbar"><span class="transform rotate-[-150deg]">80%</span></div>
                         <h3 class="text-xl font-semibold">Training Ground</h3>
-                        <p>sport an area where people prepare for sporting competitions, with activities primarily
+                        <p class="text-description-color">sport an area where people prepare for sporting competitions,
+                            with activities primarily
                             concentrating on skills.</p>
                     </div>
                 </div>
@@ -187,10 +199,11 @@
 
         <!-- start program section -->
 
-        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:50">
-            <div class="w-full px-0 lg:px-28 space-y-4 mb-12 border-y-2 border-dotted py-16 text-center">
-                <h2 class="text-2xl lg:text-4xl font-extrabold">Program Sections</h2>
-                <p class="font-medium">Our beginners hockey program teaches children how to skate and how to play
+        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:mt-28">
+            <div class="w-full space-y-4 mb-12 border-y-2 border-dotted px-0 lg:px-28 py-10 lg:py-14 text-center">
+                <h2 class="text-2xl lg:text-4xl text-heading-color font-extrabold">Program Sections</h2>
+                <p class="text-sm lg:text-base font-medium text-description-color">Our beginners hockey program teaches
+                    children how to skate and how to play
                     hockey. It is for ages 3 to 7. The beginners program is run on Saturday and Sunday mornings at the
                     North Rec.</p>
             </div>
@@ -216,7 +229,7 @@
                     </div>
                 </div>
                 <div
-                    class="col-span-1 lg:col-span-2 h-full lg:h-[65vh] lg:relative bg-[linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./Images/4.png)] bg-no-repeat bg-cover rounded-2xl lg:pt-10">
+                    class="col-span-1 lg:col-span-2 h-full lg:h-[70vh] lg:relative bg-[linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./Images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl lg:pt-10">
                     <div class="w-full lg:w-[600px] p-5 lg:p-10 text-white space-y-5 lg:absolute bottom-0 left-0">
                         <h3 class="text-3xl font-extrabold">Professional Program</h3>
                         <p>Professional athletes in hockey play for professional teams. They play hockey games in front
@@ -231,17 +244,18 @@
 
         <!-- start product section -->
 
-        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:50">
-            <div class="w-full px-0 lg:px-28 space-y-4 mb-12 border-y-2 border-dotted py-16 text-center">
-                <h2 class="text-2xl lg:text-4xl font-extrabold">Our New Products</h2>
-                <p class="font-medium">Hello guys how are you doing, I hope you guys are all well. This is our new
+        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:mt-28">
+            <div class="w-full space-y-4 mb-12 border-y-2 border-dotted px-0 lg:px-28 py-10 lg:py-14 text-center">
+                <h2 class="text-2xl lg:text-4xl font-extrabold text-heading-color">Our New Products</h2>
+                <p class="text-sm lg:text-base font-medium text-description-color">Hello guys how are you doing, I hope
+                    you guys are all well. This is our new
                     product's and surprisingly it's free delivery. So why are you waiting for,place your order now.</p>
             </div>
             <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
                 <div
                     class="w-full flex flex-col lg:flex-row gap-5 items-center border-x border-y border-gray-200 drop-shadow-md rounded-md p-6">
-                    <div>
-                        <img class="w-full rounded-md" src="./Images/5.png" alt="error">
+                    <div class="w-full lg:w-1/2 h-full">
+                        <img class="w-full h-full rounded-md" src="./Images/5.png" alt="error">
                     </div>
                     <div class="space-y-3">
                         <div class="flex gap-4">
@@ -261,8 +275,8 @@
                 </div>
                 <div
                     class="w-full flex flex-col lg:flex-row gap-5 items-center border-x border-y border-gray-200 drop-shadow-md rounded-lg p-6">
-                    <div>
-                        <img class="w-full rounded-md" src="./Images/6.png" alt="error">
+                    <div class="w-full lg:w-1/2 h-full">
+                        <img class="w-full h-full rounded-md" src="./Images/6.png" alt="error">
                     </div>
                     <div class="space-y-3">
                         <div class="flex gap-4">
@@ -282,8 +296,8 @@
                 </div>
                 <div
                     class="w-full flex flex-col lg:flex-row gap-5 items-center border-x border-y border-gray-200 drop-shadow-md rounded-lg p-6">
-                    <div>
-                        <img class="w-full rounded-md" src="./Images/7.png" alt="error">
+                    <div class="w-full lg:w-1/2 h-full">
+                        <img class="w-full h-full rounded-md" src="./Images/7.png" alt="error">
                     </div>
                     <div class="space-y-3">
                         <div class="flex gap-4">
@@ -303,8 +317,8 @@
                 </div>
                 <div
                     class="w-full flex flex-col lg:flex-row gap-5 items-center border-x border-y border-gray-200 drop-shadow-md rounded-lg p-6">
-                    <div>
-                        <img class="w-full rounded-md" src="./Images/8.png" alt="error">
+                    <div class="w-full lg:w-1/2 h-full">
+                        <img class="w-full h-full rounded-md" src="./Images/8.png" alt="error">
                     </div>
                     <div class="space-y-3">
                         <div class="flex gap-4">
@@ -324,8 +338,8 @@
                 </div>
                 <div
                     class="w-full flex flex-col lg:flex-row gap-5 items-center border-x border-y border-gray-200 drop-shadow-md rounded-lg p-6">
-                    <div>
-                        <img class="w-full rounded-md" src="./Images/9.png" alt="error">
+                    <div class="w-full lg:w-1/2 h-full">
+                        <img class="w-full h-full rounded-md" src="./Images/9.png" alt="error">
                     </div>
                     <div class="space-y-3">
                         <div class="flex gap-4">
@@ -346,7 +360,7 @@
                 </div>
                 <div
                     class="w-full flex flex-col lg:flex-row gap-5 items-center border-x border-y border-gray-200 drop-shadow-md rounded-lg p-6">
-                    <div>
+                    <div class="w-full lg:w-1/2 h-full">
                         <img class="w-full rounded-md" src="./Images/10.png" alt="error">
                     </div>
                     <div class="space-y-3">
@@ -372,16 +386,17 @@
 
         <!-- start question section -->
 
-        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:50">
-            <div class="w-full px-0 lg:px-28 space-y-4 mb-12 border-y-2 border-dotted py-16 text-center">
-                <h2 class="text-2xl lg:text-4xl font-extrabold">Clients Question</h2>
-                <p class="font-medium">Here are the top 6 questions you'd ask your club members · What can the club do
+        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:mt-28">
+            <div class="w-full space-y-4 mb-12 border-y-2 border-dotted px-0 lg:px-28 py-10 lg:py-14 text-center">
+                <h2 class="text-2xl lg:text-4xl font-extrabold text-heading-color">Clients Question</h2>
+                <p class="text-sm lg:text-base font-medium text-description-color">Here are the top 6 questions you'd
+                    ask your club members · What can the club do
                     to
                     better serve your needs? · How satisfied are you with our club and your club partners.</p>
             </div>
             <div
                 class="w-full flex flex-col lg:flex-row gap-5 border-x border-y border-gray-200  rounded-lg drop-shadow-md p-6">
-                <div>
+                <div class="w-full lg:w-3/5">
                     <img class="w-full" src="./Images/11.png" alt="error">
                 </div>
                 <div>
@@ -391,7 +406,8 @@
                             Our Equipment
                         </div>
                         <div class="collapse-content">
-                            <p class="w-4/5">Our equipment is a helmet, shoulder pads, elbow pads, mouth guard,
+                            <p class="w-4/5 text-sm lg:text-base text-description-color">Our equipment is a helmet,
+                                shoulder pads, elbow pads, mouth guard,
                                 protective gloves, shin pads and a neck guard.</p>
                         </div>
                     </div>
@@ -401,7 +417,8 @@
                             Hockey Training
                         </div>
                         <div class="collapse-content">
-                            <p class="w-4/5">hockey training is teaching, or developing in oneself or others fitness
+                            <p class="w-4/5 text-sm lg:text-base text-description-color">hockey training is teaching, or
+                                developing in oneself or others fitness
                                 that relate to specific useful competencies.</p>
                         </div>
                     </div>
@@ -411,7 +428,8 @@
                             Private Lessons
                         </div>
                         <div class="collapse-content">
-                            <p class="w-4/5">Many private American Metal goggles favored by US high
+                            <p class="w-4/5 text-sm lg:text-base text-description-color">Many private American Metal
+                                goggles favored by US high
                                 school lacrosse and permitted in high school field hockey is prohibited under FIH rules.
                             </p>
                         </div>
@@ -422,7 +440,8 @@
                             Ski Touring
                         </div>
                         <div class="collapse-content">
-                            <p class="w-4/5">Ski touring combines elements of Nordic and alpine skiing and embraces such
+                            <p class="w-4/5 text-sm lg:text-base text-description-color">Ski touring combines elements
+                                of Nordic and alpine skiing and embraces such
                                 sub-disciplines as Telemark and radon.</p>
                         </div>
                     </div>
@@ -432,7 +451,8 @@
                             Booking
                         </div>
                         <div class="collapse-content">
-                            <p class="w-4/5">Booking Holdings Inc. is an American travel technology company incorporated
+                            <p class="w-4/5 text-sm lg:text-base text-description-color">Booking Holdings Inc. is an
+                                American travel technology company incorporated
                                 under Delaware General Corporation Law and based in Norway, Connecticut</p>
                         </div>
                     </div>
@@ -442,7 +462,8 @@
                             Pricings
                         </div>
                         <div class="collapse-content">
-                            <p class="w-4/5">Pricing is the process whereby a business sets the price at which it will
+                            <p class="w-4/5 text-sm lg:text-base text-description-color">Pricing is the process whereby
+                                a business sets the price at which it will
                                 sell its products and services, and may be part of the business's marketing plan.</p>
                         </div>
                     </div>
@@ -454,10 +475,11 @@
 
         <!-- start touch section -->
 
-        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:50">
-            <div class="w-full px-0 lg:px-28 space-y-4 mb-12 border-y-2 border-dotted py-16 text-center">
-                <h2 class="text-2xl lg:text-4xl font-extrabold">Get In Touch</h2>
-                <p class="font-medium">Fill up this form bellow to get in touch wih us.</p>
+        <section class="w-full lg:w-4/5 mx-auto px-2 lg:px-0 mt-20 lg:mt-28">
+            <div class="w-full space-y-4 mb-12 border-y-2 border-dotted px-0 lg:px-28 py-10 lg:py-14 text-center">
+                <h2 class="text-2xl lg:text-4xl font-extrabold text-heading-color">Get In Touch</h2>
+                <p class="text-sm lg:text-base font-medium text-description-color">Fill up this form bellow to get in
+                    touch wih us.</p>
             </div>
             <div class="grid gap-6 grid-cols-1 lg:grid-cols-3">
                 <div class="border-x border-y border-gray-200  rounded-lg drop-shadow-md p-6 space-y-6">
@@ -480,39 +502,41 @@
                 <from
                     class="col-span-1 lg:col-span-2 grid gap-x-6 gap-y-6 lg:gap-y-12 grid-cols-1 lg:grid-cols-2 grid-rows-4 lg:grid-rows-3">
                     <div class="space-y-6 flex flex-col justify-between">
-                        <label class="form-control w-full">
+                        <label class="form-control w-full space-y-2">
                             <div class="label">
-                                <span class="label-text text-xl font-bold">What is your name?</span>
+                                <span class="label-text text-xl font-bold">Your Name</span>
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full" />
                         </label>
-                        <label class="form-control w-full">
+                        <label class="form-control w-full space-y-2">
                             <div class="label">
-                                <span class="label-text text-xl font-bold">What is your name?</span>
+                                <span class="label-text text-xl font-bold">Subject</span>
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="email" placeholder="Enter your subject" class="input input-bordered w-full" />
                         </label>
                     </div>
                     <div class="space-y-6 flex flex-col justify-between">
-                        <label class="form-control w-full">
+                        <label class="form-control w-full space-y-2">
                             <div class="label">
-                                <span class="label-text text-xl font-bold">What is your name?</span>
+                                <span class="label-text text-xl font-bold">Your Email</span>
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="text" placeholder="Enter your email" class="input input-bordered w-full" />
                         </label>
-                        <label class="form-control w-full">
+                        <label class="form-control w-full space-y-2">
                             <div class="label">
-                                <span class="label-text text-xl font-bold">What is your name?</span>
+                                <span class="label-text text-xl font-bold">Phone Number</span>
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
+                            <input type="number" placeholder="Enter your phone number"
+                                class="input input-bordered w-full" />
                         </label>
                     </div>
                     <div class="col-span-1 lg:col-span-2 row-span-2 space-y-8  flex flex-col justify-between">
-                        <label class="form-control h-full">
+                        <label class="form-control h-full space-y-2">
                             <div class="label">
-                                <span class="label-text text-xl font-bold">Your bio</span>
+                                <span class="label-text text-xl font-bold">Message</span>
                             </div>
-                            <textarea class="textarea textarea-bordered h-full" placeholder="Bio"></textarea>
+                            <textarea class="textarea textarea-bordered h-full"
+                                placeholder="Write your message"></textarea>
                         </label>
                         <button class="btn bg-primary-color w-full text-white">Send Message</button>
                     </div>
